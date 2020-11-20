@@ -2,3 +2,30 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
+h1,h2{
+  font-family: Helvetica;
+  font-weight: 15px;
+  color:#f7dad9
+}
+p{
+  font-family: Helvetica;
+  color:#f7dad9
+}
+
+.banner{
+  background-size: cover;
+  height: 150vh;
+  text-align: center;
+}
+
+.banner-content{
+  padding: 30px;
+}
+
+.card-link{
+  color: #f7dad9;
+}
+
+.btn-md{
+  font-color:#f7dad9;
+}

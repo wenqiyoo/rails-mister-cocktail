@@ -1,0 +1,23 @@
+<div class="banner" style="background-image: url('<%= image_path 'cocktails.jpg' %>'); object-fit: background-image;">
+  <div class="banner-content">
+    <h1>V's Cocktail</h1>
+    <p>Awesome beverages for loners</p>
+    <%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-light btn-md" %>
+  </div>
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1536599424071-0b215a388ba7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60');">
+          <div class="card-description">
+            <h2><%= cocktail.name %></h2>
+          </div>
+          <%= link_to "Show Cocktail", cocktail_path(cocktail), class: 'card-link' %>
+          <%= link_to "Edit Cocktail", edit_cocktail_path(cocktail), class: 'card-link' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+</div>
